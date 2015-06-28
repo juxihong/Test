@@ -4,8 +4,7 @@
 grant {
   permission java.security.AllPermission;
   permission java.net.SocketPermission "raw.githubusercontent.com:443", "connect, resolve";
-  permission java.net.SocketPermission "raw.githubusercontent.com:443" "connect, resolve";
-  permission java.net.SocketPermission "[raw.githubusercontent.com]:9000", "connect, resolve";
-  permission java.net.SocketPermission "[raw.githubusercontent.com]:3389", "connect, resolve";
+  permission java.lang.RuntimePermission  "createSecurityManager";
+  permission java.lang.RuntimePermission  "createClassLoader";  
 };
 
